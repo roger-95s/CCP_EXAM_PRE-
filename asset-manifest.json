@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.js": "/CCP_EXAM_PRE-//public/index.html/static/js/main.0fae8163.js",
-    "index.html": "/CCP_EXAM_PRE-//public/index.html/index.html",
-    "main.0fae8163.js.map": "/CCP_EXAM_PRE-//public/index.html/static/js/main.0fae8163.js.map"
+    "main.js": "/CCP_EXAM_PRE-/static/js/main.0fae8163.js",
+    "index.html": "/CCP_EXAM_PRE-/index.html",
+    "main.0fae8163.js.map": "/CCP_EXAM_PRE-/static/js/main.0fae8163.js.map"
   },
   "entrypoints": [
     "static/js/main.0fae8163.js"
