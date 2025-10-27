@@ -156,18 +156,38 @@ export default function ClfPracticeApp() {
   const score = () => {
     let correct = 0;
     for (const Q of questionSet) {
-      if (answers[Q.id] === Q.answer) correct++; // Compare user's answer with correct answer
+      const userAns = answers[Q.id];
+      const correctAns = Q.answer;
+
+      if (Array.isArray(correctAns)) {
+        // For multi-select questions
+        const sortedUser = [...(userAns || [])].sort();
+        const sortedCorrect = [...correctAns].sort();
+        if (
+          sortedUser.length === sortedCorrect.length &&
+          sortedUser.every((val, index) => val === sortedCorrect[index])
+        ) {
+          correct++;
+        }
+      } else {
+        // For single-select questions
+        if (userAns === correctAns) correct++;
+      }
     }
     return {
       correct,
       total: questionSet.length,
-      pct: Math.round((correct / questionSet.length) * 100), // Percentage
+      pct: Math.round((correct / questionSet.length) * 100),
     };
   };
 
   // --- BUILD RESULT DETAILS FOR EXPLANATION VIEW ---
   const buildResultDetails = (question, userAnswer) => {
-    const isCorrect = userAnswer === question.answer;
+    const isCorrect = Array.isArray(question.answer)
+      ? Array.isArray(userAnswer) &&
+      userAnswer.length === question.answer.length &&
+      [...userAnswer].sort().every((val, idx) => val === [...question.answer].sort()[idx])
+      : userAnswer === question.answer;
     return {
       answer: isCorrect ? question.answer : userAnswer, // Show what the user answered
       explanation: question.explanation || "Unknown",

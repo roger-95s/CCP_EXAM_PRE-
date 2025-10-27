@@ -79,7 +79,7 @@ const QUESTIONS = [
       "D": "Project Managers",
       "E": "IT Architects"
     },
-    "answer": "A,E",
+    "answer": ["A", "E"],
     "explanation": "CIOs oversee the entire migration process and ensure IT strategies align with business objectives. IT Architects design the cloud infrastructure to support the organization's IT strategies efficiently.",
     "correct": "Chief Information Officers (CIOs) and IT Architects are the correct answers (as explained above.)",
     "incorrect": {
@@ -101,7 +101,7 @@ const QUESTIONS = [
       "D": "Use AWS Certificate Manager to create a catalog of approved services",
       "E": "Use Amazon GuardDuty to record API activity to an S3 bucket"
     },
-    "answer": "A,C",
+    "answer": ["A", "C"],
     "explanation": "AWS Config tracks configuration state and changes over time. CloudTrail audits who made what API calls on what resources at what time, helping identify changes that cause reliability issues.",
     "correct": "Use AWS Config to generate an inventory of AWS resources and Use AWS CloudTrail to record AWS API calls into an auditable log file are the correct answers.",
     "incorrect": {
@@ -124,7 +124,7 @@ const QUESTIONS = [
       "D": "Adopting a consumption model",
       "E": "Automatically recovering from failure"
     },
-    "answer": "C,E",
+    "answer": ["C", "E"],
     "explanation": "Recovery procedures should always be tested ahead of any outage. Implementing automatic recovery when possible reduces operational burden and potential downtime associated with failures.",
     "correct": "Testing recovery procedures and Automatically recovering from failure are the correct answers.",
     "incorrect": {
@@ -213,7 +213,7 @@ const QUESTIONS = [
       "D": "Switch automatically to Reserved Instances or Spot Instances, whichever is most cost-effective",
       "E": "Move data stored in Amazon S3 to a more cost-effective storage class"
     },
-    "answer": "B,C",
+    "answer": ["B", "C"],
     "explanation": "AWS Cost Management tools allow you to organize and track cost and usage data, break down costs by various dimensions, and create budgets with notifications for current or forecasted usage.",
     "correct": "Break down AWS costs by day, service, and linked AWS account and Create budgets and receive notifications if current or forecasted usage exceeds the budgets are the correct answers.",
     "incorrect": {
@@ -411,7 +411,7 @@ const QUESTIONS = [
       "D": "Physical security of data center facilities",
       "E": "Compute capacity availability"
     },
-    "answer": "A,C",
+    "answer": ["A", "C"],
     "explanation": "Customers are responsible for encrypting data at rest and in transit, and for setting network and firewall configurations such as Network ACLs, Security Groups, and OS-level firewalls.",
     "correct": "Setting up server-side encryption on an Amazon S3 bucket and Network and firewall configurations are the correct answers.",
     "incorrect": {
@@ -456,7 +456,7 @@ const QUESTIONS = [
       "D": "Ensuring that access to data centers is restricted",
       "E": "Ensuring that hardware is disposed of properly"
     },
-    "answer": "A,C",
+    "answer": ["A", "C"],
     "explanation": "Customers are responsible for encrypting data at rest and in transit, and for properly training their staff in security best practices for AWS services they use.",
     "correct": "Ensuring that application data is encrypted at rest and Ensuring that users have received security training in the use of AWS services are the correct answers.",
     "incorrect": {
@@ -568,7 +568,7 @@ const QUESTIONS = [
       "D": "Economics",
       "E": "Performance efficiency"
     },
-    "answer": "B,E",
+    "answer": ["B", "E"],
     "explanation": "The five pillars of the AWS Well-Architected Framework are operational excellence, security, reliability, performance efficiency, and cost optimization.",
     "correct": "Operational excellence and Performance efficiency are the correct answers.",
     "incorrect": {
@@ -635,7 +635,7 @@ const QUESTIONS = [
       "D": "Enterprise licensing discounts",
       "E": "Itemized power costs"
     },
-    "answer": "A,C",
+    "answer": ["A", "C"],
     "explanation": "AWS provides fine-grained billing and allows you to turn off resources you're not using easily and not pay for them (pay for what you use model).",
     "correct": "Fine-grained billing and Ability to turn off resources and not pay for them are the correct answers.",
     "incorrect": {
@@ -724,7 +724,7 @@ const QUESTIONS = [
       "D": "High availability is easier to implement due to built-in functionality for deploying read replicas and multi-AZ",
       "E": "There are no costs for replicating data between DBs in different data centers or regions"
     },
-    "answer": "B,D",
+    "answer": ["B", "D"],
     "explanation": "RDS allows easy scaling by increasing instance type without long procurement cycles, and implements fault tolerance through multi-AZ and read replicas easily.",
     "correct": "Scalability is improved as it is quicker to implement and there is an abundance of capacity and High availability is easier to implement due to built-in functionality for deploying read replicas and multi-AZ are the correct answers.",
     "incorrect": {
@@ -879,7 +879,7 @@ const QUESTIONS = [
       "D": "Security groups",
       "E": "Server certificates"
     },
-    "answer": "B,E",
+    "answer": ["B", "E"],
     "explanation": "Access keys are long-term credentials for signing programmatic requests to the AWS CLI or API. Server certificates are SSL/TLS certificates that can be used to authenticate with some AWS services.",
     "correct": "Access keys and Server certificates are the correct answers.",
     "incorrect": {
@@ -903,7 +903,7 @@ const QUESTIONS = [
       "D": "PCI DSS compliance",
       "E": "Charged for what you use"
     },
-    "answer": "B,E",
+    "answer": ["B", "E"],
     "explanation": "You cannot use IAM to create local user accounts on any system, and you are not charged for using IAM - it is free to use.",
     "correct": "Logon using local user accounts and Charged for what you use are the correct answers.",
     "incorrect": {
@@ -926,7 +926,7 @@ const QUESTIONS = [
       "D": "Enables you to attach IAM permission policies to more than one user at a time",
       "E": "Provide the ability to nest groups to create an organizational hierarchy"
     },
-    "answer": "B,D",
+    "answer": ["B", "D"],
     "explanation": "Groups are collections of users with policies attached, enabling you to organize users by job function or role and attach permissions to multiple users at once.",
     "correct": "Groups let you specify permissions for multiple users, which can make it easier to manage the permissions for those users and Enables you to attach IAM permission policies to more than one user at a time are the correct answers.",
     "incorrect": {
@@ -1037,7 +1037,7 @@ const QUESTIONS = [
       "D": "AWS are responsible for networking infrastructure",
       "E": "Customers are responsible for edge locations"
     },
-    "answer": "C,D",
+    "answer": ["C", "D"],
     "explanation": "Customers are responsible for networking traffic protection (encryption, security groups, NACLs). AWS is responsible for the underlying networking infrastructure equipment.",
     "correct": "Customers are responsible for networking traffic protection and AWS are responsible for networking infrastructure are the correct answers.",
     "incorrect": {
