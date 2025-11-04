@@ -215,7 +215,7 @@ export default function ClfPracticeApp() {
             onChange={(e) => setNumQuestions(parseInt(e.target.value))}
             className="border p-2 rounded w-full mb-4"
           >
-            {[5, 10, 25, 50, 100].map((n) => (
+            {[5, 10, 25, 50, 65, 100].map((n) => (
               <option key={n} value={n}>
                 {n} Questions
               </option>
