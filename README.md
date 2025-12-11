@@ -143,6 +143,7 @@ A full `CONTRIBUTING.md` will be added as the community expands.
       "https://digitalcloud.training/aws-analytics-services/"
     ]
   },
+```
 
 ### Images here 
 - comming soon
