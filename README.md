@@ -150,10 +150,10 @@ A full `CONTRIBUTING.md` will be added as the community expands.
 ### Images here 
 - comming soon
 
-## License
-- comming soon
+## LICENSE
+<a href="LICENSE">Open Source Certification Practice Community Provissional LICENSE</a>
 
-
+---
 ## Acknowledgements
 
 Thank you to all contributors committed to making certification preparation accessible for learners worldwide, facing financial limitations. 
