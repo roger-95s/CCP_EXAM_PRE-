@@ -85,6 +85,7 @@ Planned additions include:
 ## Project Structure
 (This will evolve as the platform grows.)
 
+```
 /src
     ├── App.css
     ├── aws_exam_app_with_timer.jsx
@@ -93,6 +94,7 @@ Planned additions include:
     └── questions.jsx
 
 ---
+```
 
 ## How to Contribute
 We welcome contributors of all skill levels.
